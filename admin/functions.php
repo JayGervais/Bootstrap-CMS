@@ -1,4 +1,15 @@
 <?php
+// confirm function
+function confirmQuery($result) {
+    
+    global $connection;
+    
+    // query connection test
+    if(!$result) {
+        die("Query Failed ." . mysqli_error($connection));
+    }
+}
+
 
 function insert_categories() {
     
@@ -56,6 +67,8 @@ function deleteCategories() {
       header("Location: categories.php"); // request refresh page
       }
 }
+
+
 
 
 
