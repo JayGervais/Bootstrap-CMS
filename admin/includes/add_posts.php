@@ -46,7 +46,7 @@ if(isset($_POST['create_post'])) {
     </div>   
     
     <div class="form-group">
-        <label for="post_category">Post Category ID</label><br>
+        <label for="post_category">Post Category</label><br>
         <input type="text" class="form-control" name="post_category_id">
     </div>     
     
@@ -61,7 +61,7 @@ if(isset($_POST['create_post'])) {
     </div>   
     
     <div class="form-group">
-        <label for="title">Post Image</label><br>
+        <label for="post_image">Post Image</label><br>
         <input type="file" name="image">
     </div> 
     
