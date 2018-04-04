@@ -10,9 +10,8 @@
 
            $cat_id =  ($_GET['edit']);
 
-
-
-
+            
+            
           $query = "SELECT * FROM categories WHERE cat_id = $cat_id ";
             $select_categories_id = mysqli_query($connection,$query);    
 

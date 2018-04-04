@@ -71,6 +71,7 @@ if(isset($_POST['update_post'])) {
     
     <div class="form-group">
         <label for="title">Post Category</label><br>
+        
         <select name="post_category" id="">
             
             <?php
