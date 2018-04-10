@@ -23,6 +23,11 @@
                     $post_date = $row['post_date'];
                     $post_image = $row['post_image'];
                     $post_content = substr($row['post_content'],0,300);
+                    $post_status = $row['post_status'];
+
+                    if($post_status !== 'published') {
+                        echo "<h1 class='text-center'>No posts published.</h1>";
+                    } else {
                     
                     ?>
                     
@@ -50,7 +55,7 @@
                 <hr>  
                           
                     
-             <?php  } ?>   
+             <?php } } ?>   
                
             
 
